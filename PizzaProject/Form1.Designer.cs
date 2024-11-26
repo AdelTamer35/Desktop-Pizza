@@ -99,25 +99,27 @@
             // 
             // OrderButton
             // 
+            this.OrderButton.BackColor = System.Drawing.Color.GreenYellow;
             this.OrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OrderButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderButton.Location = new System.Drawing.Point(298, 430);
             this.OrderButton.Name = "OrderButton";
-            this.OrderButton.Size = new System.Drawing.Size(136, 54);
-            this.OrderButton.TabIndex = 5;
+            this.OrderButton.Size = new System.Drawing.Size(133, 54);
+            this.OrderButton.TabIndex = 0;
             this.OrderButton.Text = "Order";
-            this.OrderButton.UseVisualStyleBackColor = true;
+            this.OrderButton.UseVisualStyleBackColor = false;
             // 
             // RestButton
             // 
+            this.RestButton.BackColor = System.Drawing.Color.Red;
             this.RestButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RestButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestButton.Location = new System.Drawing.Point(538, 430);
             this.RestButton.Name = "RestButton";
             this.RestButton.Size = new System.Drawing.Size(133, 54);
-            this.RestButton.TabIndex = 6;
+            this.RestButton.TabIndex = 1;
             this.RestButton.Text = "Reset";
-            this.RestButton.UseVisualStyleBackColor = true;
+            this.RestButton.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
