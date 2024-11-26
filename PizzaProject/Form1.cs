@@ -17,5 +17,15 @@ namespace PizzaProject
             InitializeComponent();
         }
 
+        private void RestButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Are You Sure?",
+                "Rest Order",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2);
+
+        }
     }
 }

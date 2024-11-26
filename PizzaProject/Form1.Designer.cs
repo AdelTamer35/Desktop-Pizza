@@ -120,6 +120,7 @@
             this.RestButton.TabIndex = 1;
             this.RestButton.Text = "Reset";
             this.RestButton.UseVisualStyleBackColor = false;
+            this.RestButton.Click += new System.EventHandler(this.RestButton_Click);
             // 
             // Form1
             // 
