@@ -41,10 +41,15 @@
             this.rbSmall = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbThin = new System.Windows.Forms.RadioButton();
             this.rbThink = new System.Windows.Forms.RadioButton();
+            this.rbThin = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbTakeOut = new System.Windows.Forms.RadioButton();
+            this.rbEatIn = new System.Windows.Forms.RadioButton();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.gbSize.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -110,24 +115,28 @@
             // OrderButton
             // 
             this.OrderButton.BackColor = System.Drawing.Color.GreenYellow;
+            this.OrderButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OrderButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderButton.Location = new System.Drawing.Point(298, 468);
             this.OrderButton.Name = "OrderButton";
             this.OrderButton.Size = new System.Drawing.Size(133, 54);
-            this.OrderButton.TabIndex = 0;
+            this.OrderButton.TabIndex = 10;
+            this.OrderButton.TabStop = false;
             this.OrderButton.Text = "Order";
             this.OrderButton.UseVisualStyleBackColor = false;
             // 
             // RestButton
             // 
             this.RestButton.BackColor = System.Drawing.Color.Red;
+            this.RestButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RestButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RestButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestButton.Location = new System.Drawing.Point(538, 468);
             this.RestButton.Name = "RestButton";
             this.RestButton.Size = new System.Drawing.Size(133, 54);
-            this.RestButton.TabIndex = 1;
+            this.RestButton.TabIndex = 11;
+            this.RestButton.TabStop = false;
             this.RestButton.Text = "Reset";
             this.RestButton.UseVisualStyleBackColor = false;
             this.RestButton.Click += new System.EventHandler(this.RestButton_Click);
@@ -141,8 +150,8 @@
             this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSize.Location = new System.Drawing.Point(74, 93);
             this.gbSize.Name = "gbSize";
-            this.gbSize.Size = new System.Drawing.Size(191, 196);
-            this.gbSize.TabIndex = 5;
+            this.gbSize.Size = new System.Drawing.Size(191, 174);
+            this.gbSize.TabIndex = 0;
             this.gbSize.TabStop = false;
             this.gbSize.Text = "Size";
             // 
@@ -150,11 +159,10 @@
             // 
             this.rbLarge.AutoSize = true;
             this.rbLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbLarge.Location = new System.Drawing.Point(48, 151);
+            this.rbLarge.Location = new System.Drawing.Point(48, 127);
             this.rbLarge.Name = "rbLarge";
             this.rbLarge.Size = new System.Drawing.Size(98, 33);
-            this.rbLarge.TabIndex = 8;
-            this.rbLarge.TabStop = true;
+            this.rbLarge.TabIndex = 3;
             this.rbLarge.Text = "Large";
             this.rbLarge.UseVisualStyleBackColor = true;
             // 
@@ -162,11 +170,10 @@
             // 
             this.rbMeduim.AutoSize = true;
             this.rbMeduim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMeduim.Location = new System.Drawing.Point(48, 101);
+            this.rbMeduim.Location = new System.Drawing.Point(47, 81);
             this.rbMeduim.Name = "rbMeduim";
             this.rbMeduim.Size = new System.Drawing.Size(125, 33);
-            this.rbMeduim.TabIndex = 7;
-            this.rbMeduim.TabStop = true;
+            this.rbMeduim.TabIndex = 2;
             this.rbMeduim.Text = "Meduim";
             this.rbMeduim.UseVisualStyleBackColor = true;
             // 
@@ -174,11 +181,10 @@
             // 
             this.rbSmall.AutoSize = true;
             this.rbSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSmall.Location = new System.Drawing.Point(48, 52);
+            this.rbSmall.Location = new System.Drawing.Point(47, 35);
             this.rbSmall.Name = "rbSmall";
             this.rbSmall.Size = new System.Drawing.Size(99, 33);
-            this.rbSmall.TabIndex = 6;
-            this.rbSmall.TabStop = true;
+            this.rbSmall.TabIndex = 1;
             this.rbSmall.Text = "Small";
             this.rbSmall.UseVisualStyleBackColor = true;
             // 
@@ -186,25 +192,14 @@
             // 
             this.groupBox1.Controls.Add(this.rbThink);
             this.groupBox1.Controls.Add(this.rbThin);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(74, 309);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(222, 123);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crust Type";
-            // 
-            // rbThin
-            // 
-            this.rbThin.AutoSize = true;
-            this.rbThin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbThin.Location = new System.Drawing.Point(48, 35);
-            this.rbThin.Name = "rbThin";
-            this.rbThin.Size = new System.Drawing.Size(150, 33);
-            this.rbThin.TabIndex = 7;
-            this.rbThin.TabStop = true;
-            this.rbThin.Text = "Thin Crust";
-            this.rbThin.UseVisualStyleBackColor = true;
             // 
             // rbThink
             // 
@@ -213,16 +208,62 @@
             this.rbThink.Location = new System.Drawing.Point(48, 84);
             this.rbThink.Name = "rbThink";
             this.rbThink.Size = new System.Drawing.Size(163, 33);
-            this.rbThink.TabIndex = 8;
-            this.rbThink.TabStop = true;
+            this.rbThink.TabIndex = 6;
             this.rbThink.Text = "Think Crust";
             this.rbThink.UseVisualStyleBackColor = true;
+            // 
+            // rbThin
+            // 
+            this.rbThin.AutoSize = true;
+            this.rbThin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbThin.Location = new System.Drawing.Point(48, 35);
+            this.rbThin.Name = "rbThin";
+            this.rbThin.Size = new System.Drawing.Size(150, 33);
+            this.rbThin.TabIndex = 5;
+            this.rbThin.Text = "Thin Crust";
+            this.rbThin.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbTakeOut);
+            this.groupBox2.Controls.Add(this.rbEatIn);
+            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(366, 309);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(225, 123);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Where To Eat";
+            // 
+            // rbTakeOut
+            // 
+            this.rbTakeOut.AutoSize = true;
+            this.rbTakeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbTakeOut.Location = new System.Drawing.Point(22, 84);
+            this.rbTakeOut.Name = "rbTakeOut";
+            this.rbTakeOut.Size = new System.Drawing.Size(137, 33);
+            this.rbTakeOut.TabIndex = 9;
+            this.rbTakeOut.Text = "Take Out";
+            this.rbTakeOut.UseVisualStyleBackColor = true;
+            // 
+            // rbEatIn
+            // 
+            this.rbEatIn.AutoSize = true;
+            this.rbEatIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbEatIn.Location = new System.Drawing.Point(22, 35);
+            this.rbEatIn.Name = "rbEatIn";
+            this.rbEatIn.Size = new System.Drawing.Size(99, 33);
+            this.rbEatIn.TabIndex = 8;
+            this.rbEatIn.Text = "Eat In";
+            this.rbEatIn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 547);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbSize);
             this.Controls.Add(this.RestButton);
@@ -238,6 +279,8 @@
             this.gbSize.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,6 +303,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbThink;
         private System.Windows.Forms.RadioButton rbThin;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rbTakeOut;
+        private System.Windows.Forms.RadioButton rbEatIn;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 

@@ -17,14 +17,30 @@ namespace PizzaProject
             InitializeComponent();
         }
 
+        private void RestAllButtons()
+        {
+            // Rest Size
+            rbSmall.Checked = rbMeduim.Checked = rbLarge.Checked = false;
+
+            // Rest Crust Type
+            rbThin.Checked = rbThink.Checked = false;
+
+            // Rest Where To Eat
+            rbEatIn.Checked = rbTakeOut.Checked = false;
+        }
+
         private void RestButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
+            if (MessageBox.Show(
                 "Are You Sure?",
                 "Rest Order",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning,
-                MessageBoxDefaultButton.Button2);
+                MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                
+                RestAllButtons();
+            }
 
         }
 
