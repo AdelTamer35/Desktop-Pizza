@@ -27,6 +27,10 @@ namespace PizzaProject
 
             // Rest Where To Eat
             rbEatIn.Checked = rbTakeOut.Checked = false;
+
+            // Rest Toppings
+            ckbExtraCheese.Checked = ckbMushroom.Checked = ckbTomatoes.Checked =
+            ckbOnion.Checked = ckbOlives.Checked = ckbGreenPaper.Checked = false;
         }
 
         private void RestButton_Click(object sender, EventArgs e)
@@ -43,6 +47,5 @@ namespace PizzaProject
             }
 
         }
-
     }
 }

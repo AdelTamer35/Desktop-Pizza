@@ -47,9 +47,17 @@
             this.rbTakeOut = new System.Windows.Forms.RadioButton();
             this.rbEatIn = new System.Windows.Forms.RadioButton();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.gbToppings = new System.Windows.Forms.GroupBox();
+            this.ckbGreenPaper = new System.Windows.Forms.CheckBox();
+            this.ckbOlives = new System.Windows.Forms.CheckBox();
+            this.ckbOnion = new System.Windows.Forms.CheckBox();
+            this.ckbTomatoes = new System.Windows.Forms.CheckBox();
+            this.ckbMushroom = new System.Windows.Forms.CheckBox();
+            this.ckbExtraCheese = new System.Windows.Forms.CheckBox();
             this.gbSize.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.gbToppings.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -258,11 +266,99 @@
             this.rbEatIn.Text = "Eat In";
             this.rbEatIn.UseVisualStyleBackColor = true;
             // 
+            // gbToppings
+            // 
+            this.gbToppings.Controls.Add(this.ckbGreenPaper);
+            this.gbToppings.Controls.Add(this.ckbOlives);
+            this.gbToppings.Controls.Add(this.ckbOnion);
+            this.gbToppings.Controls.Add(this.ckbTomatoes);
+            this.gbToppings.Controls.Add(this.ckbMushroom);
+            this.gbToppings.Controls.Add(this.ckbExtraCheese);
+            this.gbToppings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gbToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbToppings.Location = new System.Drawing.Point(366, 93);
+            this.gbToppings.Name = "gbToppings";
+            this.gbToppings.Size = new System.Drawing.Size(446, 192);
+            this.gbToppings.TabIndex = 12;
+            this.gbToppings.TabStop = false;
+            this.gbToppings.Text = "Toppings";
+            // 
+            // ckbGreenPaper
+            // 
+            this.ckbGreenPaper.AutoSize = true;
+            this.ckbGreenPaper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbGreenPaper.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbGreenPaper.Location = new System.Drawing.Point(259, 128);
+            this.ckbGreenPaper.Name = "ckbGreenPaper";
+            this.ckbGreenPaper.Size = new System.Drawing.Size(178, 33);
+            this.ckbGreenPaper.TabIndex = 5;
+            this.ckbGreenPaper.Text = "Green Paper";
+            this.ckbGreenPaper.UseVisualStyleBackColor = true;
+            // 
+            // ckbOlives
+            // 
+            this.ckbOlives.AutoSize = true;
+            this.ckbOlives.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbOlives.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbOlives.Location = new System.Drawing.Point(259, 82);
+            this.ckbOlives.Name = "ckbOlives";
+            this.ckbOlives.Size = new System.Drawing.Size(106, 33);
+            this.ckbOlives.TabIndex = 4;
+            this.ckbOlives.Text = "Olives";
+            this.ckbOlives.UseVisualStyleBackColor = true;
+            // 
+            // ckbOnion
+            // 
+            this.ckbOnion.AutoSize = true;
+            this.ckbOnion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbOnion.Location = new System.Drawing.Point(259, 36);
+            this.ckbOnion.Name = "ckbOnion";
+            this.ckbOnion.Size = new System.Drawing.Size(102, 33);
+            this.ckbOnion.TabIndex = 3;
+            this.ckbOnion.Text = "Onion";
+            this.ckbOnion.UseVisualStyleBackColor = true;
+            // 
+            // ckbTomatoes
+            // 
+            this.ckbTomatoes.AutoSize = true;
+            this.ckbTomatoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbTomatoes.Location = new System.Drawing.Point(22, 128);
+            this.ckbTomatoes.Name = "ckbTomatoes";
+            this.ckbTomatoes.Size = new System.Drawing.Size(148, 33);
+            this.ckbTomatoes.TabIndex = 2;
+            this.ckbTomatoes.Text = "Tomatoes";
+            this.ckbTomatoes.UseVisualStyleBackColor = true;
+            // 
+            // ckbMushroom
+            // 
+            this.ckbMushroom.AutoSize = true;
+            this.ckbMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbMushroom.Location = new System.Drawing.Point(22, 82);
+            this.ckbMushroom.Name = "ckbMushroom";
+            this.ckbMushroom.Size = new System.Drawing.Size(155, 33);
+            this.ckbMushroom.TabIndex = 1;
+            this.ckbMushroom.Text = "Mushroom";
+            this.ckbMushroom.UseVisualStyleBackColor = true;
+            // 
+            // ckbExtraCheese
+            // 
+            this.ckbExtraCheese.AutoSize = true;
+            this.ckbExtraCheese.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ckbExtraCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbExtraCheese.Location = new System.Drawing.Point(22, 36);
+            this.ckbExtraCheese.Name = "ckbExtraCheese";
+            this.ckbExtraCheese.Size = new System.Drawing.Size(187, 33);
+            this.ckbExtraCheese.TabIndex = 0;
+            this.ckbExtraCheese.Text = "Extra Cheese";
+            this.ckbExtraCheese.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 547);
+            this.Controls.Add(this.gbToppings);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbSize);
@@ -281,6 +377,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.gbToppings.ResumeLayout(false);
+            this.gbToppings.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,6 +405,13 @@
         private System.Windows.Forms.RadioButton rbTakeOut;
         private System.Windows.Forms.RadioButton rbEatIn;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.CheckBox ckbExtraCheese;
+        private System.Windows.Forms.CheckBox ckbGreenPaper;
+        private System.Windows.Forms.CheckBox ckbOlives;
+        private System.Windows.Forms.CheckBox ckbOnion;
+        private System.Windows.Forms.CheckBox ckbTomatoes;
+        private System.Windows.Forms.CheckBox ckbMushroom;
+        private System.Windows.Forms.GroupBox gbToppings;
     }
 }
 
