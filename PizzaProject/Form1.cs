@@ -34,10 +34,6 @@ namespace PizzaProject
 
             rbEatIn.CheckedChanged += RadioButton_CheckedChanged;
             rbTakeOut.CheckedChanged += RadioButton_CheckedChanged;
-
-            
-
-
         }
 
 

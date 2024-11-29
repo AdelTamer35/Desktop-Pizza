@@ -56,6 +56,8 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblWhereToEat = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lblCrust = new System.Windows.Forms.Label();
@@ -71,6 +73,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
@@ -83,6 +86,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
@@ -95,6 +99,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Green;
@@ -107,6 +112,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Orange;
@@ -119,6 +125,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
@@ -131,11 +138,12 @@
             // 
             // OrderButton
             // 
+            this.OrderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.OrderButton.BackColor = System.Drawing.Color.GreenYellow;
             this.OrderButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OrderButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderButton.Location = new System.Drawing.Point(298, 468);
+            this.OrderButton.Location = new System.Drawing.Point(291, 528);
             this.OrderButton.Name = "OrderButton";
             this.OrderButton.Size = new System.Drawing.Size(133, 54);
             this.OrderButton.TabIndex = 10;
@@ -146,11 +154,12 @@
             // 
             // RestButton
             // 
+            this.RestButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RestButton.BackColor = System.Drawing.Color.Red;
             this.RestButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RestButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RestButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RestButton.Location = new System.Drawing.Point(538, 468);
+            this.RestButton.Location = new System.Drawing.Point(575, 528);
             this.RestButton.Name = "RestButton";
             this.RestButton.Size = new System.Drawing.Size(133, 54);
             this.RestButton.TabIndex = 11;
@@ -161,12 +170,13 @@
             // 
             // gbSize
             // 
+            this.gbSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gbSize.Controls.Add(this.rbLarge);
             this.gbSize.Controls.Add(this.rbMeduim);
             this.gbSize.Controls.Add(this.rbSmall);
             this.gbSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbSize.Location = new System.Drawing.Point(74, 93);
+            this.gbSize.Location = new System.Drawing.Point(105, 129);
             this.gbSize.Name = "gbSize";
             this.gbSize.Size = new System.Drawing.Size(191, 174);
             this.gbSize.TabIndex = 0;
@@ -214,11 +224,12 @@
             // 
             // gbCrustType
             // 
+            this.gbCrustType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gbCrustType.Controls.Add(this.rbThink);
             this.gbCrustType.Controls.Add(this.rbThin);
             this.gbCrustType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gbCrustType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbCrustType.Location = new System.Drawing.Point(74, 309);
+            this.gbCrustType.Location = new System.Drawing.Point(105, 367);
             this.gbCrustType.Name = "gbCrustType";
             this.gbCrustType.Size = new System.Drawing.Size(222, 123);
             this.gbCrustType.TabIndex = 4;
@@ -253,11 +264,12 @@
             // 
             // gbWhereToEat
             // 
+            this.gbWhereToEat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gbWhereToEat.Controls.Add(this.rbTakeOut);
             this.gbWhereToEat.Controls.Add(this.rbEatIn);
             this.gbWhereToEat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gbWhereToEat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbWhereToEat.Location = new System.Drawing.Point(366, 309);
+            this.gbWhereToEat.Location = new System.Drawing.Point(366, 367);
             this.gbWhereToEat.Name = "gbWhereToEat";
             this.gbWhereToEat.Size = new System.Drawing.Size(225, 123);
             this.gbWhereToEat.TabIndex = 7;
@@ -292,6 +304,7 @@
             // 
             // gbToppings
             // 
+            this.gbToppings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gbToppings.Controls.Add(this.ckbGreenPaper);
             this.gbToppings.Controls.Add(this.ckbOlives);
             this.gbToppings.Controls.Add(this.ckbOnion);
@@ -300,7 +313,7 @@
             this.gbToppings.Controls.Add(this.ckbExtraCheese);
             this.gbToppings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gbToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbToppings.Location = new System.Drawing.Point(366, 93);
+            this.gbToppings.Location = new System.Drawing.Point(366, 129);
             this.gbToppings.Name = "gbToppings";
             this.gbToppings.Size = new System.Drawing.Size(446, 192);
             this.gbToppings.TabIndex = 12;
@@ -394,7 +407,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Berlin Sans FB", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.lblPrice.Location = new System.Drawing.Point(184, 431);
+            this.lblPrice.Location = new System.Drawing.Point(223, 417);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(99, 72);
             this.lblPrice.TabIndex = 14;
@@ -404,7 +417,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 412);
+            this.label6.Location = new System.Drawing.Point(30, 392);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 29);
             this.label6.TabIndex = 15;
@@ -412,6 +425,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.lblWhereToEat);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.lblCrust);
@@ -421,18 +437,38 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.lblPrice);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(844, 93);
+            this.groupBox1.Location = new System.Drawing.Point(836, 129);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(329, 506);
+            this.groupBox1.Size = new System.Drawing.Size(392, 506);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Order Summary";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(196, 118);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 29);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Nothing";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(28, 118);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 29);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Crust Type :";
             // 
             // lblWhereToEat
             // 
             this.lblWhereToEat.AutoSize = true;
             this.lblWhereToEat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhereToEat.Location = new System.Drawing.Point(109, 375);
+            this.lblWhereToEat.Location = new System.Drawing.Point(230, 330);
             this.lblWhereToEat.Name = "lblWhereToEat";
             this.lblWhereToEat.Size = new System.Drawing.Size(100, 29);
             this.lblWhereToEat.TabIndex = 23;
@@ -452,7 +488,7 @@
             // 
             this.lblCrust.AutoSize = true;
             this.lblCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrust.Location = new System.Drawing.Point(109, 282);
+            this.lblCrust.Location = new System.Drawing.Point(109, 228);
             this.lblCrust.Name = "lblCrust";
             this.lblCrust.Size = new System.Drawing.Size(100, 29);
             this.lblCrust.TabIndex = 21;
@@ -462,11 +498,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 241);
+            this.label8.Location = new System.Drawing.Point(30, 186);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 29);
+            this.label8.Size = new System.Drawing.Size(141, 29);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Crust Type :";
+            this.label8.Text = "Toppings :";
             // 
             // lblSize
             // 
@@ -492,7 +528,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 621);
+            this.ClientSize = new System.Drawing.Size(1262, 683);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbWhereToEat);
             this.Controls.Add(this.gbCrustType);
@@ -558,6 +594,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblWhereToEat;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
 
