@@ -10,27 +10,85 @@ using System.Windows.Forms;
 
 namespace PizzaProject
 {
-    public partial class Form1 : Form
+    public partial class PizzaOrder : Form
     {
-        public Form1()
+        public PizzaOrder()
         {
             InitializeComponent();
+
+            // Initially disable the Reset Button and Order Button
+            OrderButton.Enabled = false;
+            OrderButton.BackColor = Color.LightGreen;
+
+            RestButton.Enabled = false;
+            RestButton.BackColor = Color.AntiqueWhite;
+
+
+            // Attach CheckedChanged event to all radio buttons
+            rbSmall.CheckedChanged += RadioButton_CheckedChanged;
+            rbMeduim.CheckedChanged += RadioButton_CheckedChanged;
+            rbLarge.CheckedChanged += RadioButton_CheckedChanged;
+
+            rbThin.CheckedChanged += RadioButton_CheckedChanged;
+            rbThink.CheckedChanged += RadioButton_CheckedChanged;
+
+            rbEatIn.CheckedChanged += RadioButton_CheckedChanged;
+            rbTakeOut.CheckedChanged += RadioButton_CheckedChanged;
         }
 
         private void RestAllButtons()
         {
             // Rest Size
-            rbSmall.Checked = rbMeduim.Checked = rbLarge.Checked = false;
+            ResetGroupBoxControls(gbSize);
 
             // Rest Crust Type
-            rbThin.Checked = rbThink.Checked = false;
+            ResetGroupBoxControls(gbCrustType);
 
             // Rest Where To Eat
-            rbEatIn.Checked = rbTakeOut.Checked = false;
+            ResetGroupBoxControls(gbWhereToEat);
 
             // Rest Toppings
-            ckbExtraCheese.Checked = ckbMushroom.Checked = ckbTomatoes.Checked =
-            ckbOnion.Checked = ckbOlives.Checked = ckbGreenPaper.Checked = false;
+            ResetGroupBoxControls(gbToppings);
+
+            // Change Enabled And Color For Order And Rest Color
+            OrderButton.Enabled = false;
+            OrderButton.BackColor = Color.LightGreen;
+
+            RestButton.Enabled = false;
+            RestButton.BackColor = Color.AntiqueWhite;
+        }
+
+        private void ResetGroupBoxControls(GroupBox groupBox)
+        {
+            // Iterate through all controls in the group box
+            foreach (Control control in groupBox.Controls)
+            {
+                if (control is RadioButton radioButton)
+                {
+                    radioButton.Checked = false; // Uncheck the radio button
+                }
+                else
+                {
+                    (control as CheckBox).Checked = false; // Uncheck the CheckBox
+                }
+            }
+        }
+
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            // Check if one radio button from each group is selected
+            bool isSizeSelected = rbSmall.Checked || rbMeduim.Checked || rbLarge.Checked;
+            bool isCrustTypeSelected = rbThin.Checked || rbThink.Checked;
+            bool isWhereToEatSelected = rbEatIn.Checked || rbTakeOut.Checked;
+
+            // Enable the Reset and Order Button only if all groups have a selection
+            RestButton.Enabled = isSizeSelected && isCrustTypeSelected && isWhereToEatSelected;
+            OrderButton.Enabled = RestButton.Enabled;
+            if (RestButton.Enabled)
+            {
+                OrderButton.BackColor = Color.GreenYellow;
+                RestButton.BackColor = Color.Red;
+            }
         }
 
         private void RestButton_Click(object sender, EventArgs e)
@@ -42,10 +100,10 @@ namespace PizzaProject
                 MessageBoxIcon.Warning,
                 MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                
                 RestAllButtons();
             }
 
         }
+
     }
 }

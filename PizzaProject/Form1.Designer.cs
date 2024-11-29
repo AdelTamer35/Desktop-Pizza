@@ -1,6 +1,6 @@
 ﻿namespace PizzaProject
 {
-    partial class Form1
+    partial class PizzaOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -39,14 +39,12 @@
             this.rbLarge = new System.Windows.Forms.RadioButton();
             this.rbMeduim = new System.Windows.Forms.RadioButton();
             this.rbSmall = new System.Windows.Forms.RadioButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbCrustType = new System.Windows.Forms.GroupBox();
             this.rbThink = new System.Windows.Forms.RadioButton();
             this.rbThin = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbWhereToEat = new System.Windows.Forms.GroupBox();
             this.rbTakeOut = new System.Windows.Forms.RadioButton();
             this.rbEatIn = new System.Windows.Forms.RadioButton();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.gbToppings = new System.Windows.Forms.GroupBox();
             this.ckbGreenPaper = new System.Windows.Forms.CheckBox();
             this.ckbOlives = new System.Windows.Forms.CheckBox();
@@ -54,9 +52,10 @@
             this.ckbTomatoes = new System.Windows.Forms.CheckBox();
             this.ckbMushroom = new System.Windows.Forms.CheckBox();
             this.ckbExtraCheese = new System.Windows.Forms.CheckBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gbSize.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbCrustType.SuspendLayout();
+            this.gbWhereToEat.SuspendLayout();
             this.gbToppings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,18 +195,18 @@
             this.rbSmall.Text = "Small";
             this.rbSmall.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbCrustType
             // 
-            this.groupBox1.Controls.Add(this.rbThink);
-            this.groupBox1.Controls.Add(this.rbThin);
-            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(74, 309);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(222, 123);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Crust Type";
+            this.gbCrustType.Controls.Add(this.rbThink);
+            this.gbCrustType.Controls.Add(this.rbThin);
+            this.gbCrustType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gbCrustType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbCrustType.Location = new System.Drawing.Point(74, 309);
+            this.gbCrustType.Name = "gbCrustType";
+            this.gbCrustType.Size = new System.Drawing.Size(222, 123);
+            this.gbCrustType.TabIndex = 4;
+            this.gbCrustType.TabStop = false;
+            this.gbCrustType.Text = "Crust Type";
             // 
             // rbThink
             // 
@@ -231,18 +230,18 @@
             this.rbThin.Text = "Thin Crust";
             this.rbThin.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbWhereToEat
             // 
-            this.groupBox2.Controls.Add(this.rbTakeOut);
-            this.groupBox2.Controls.Add(this.rbEatIn);
-            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(366, 309);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(225, 123);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Where To Eat";
+            this.gbWhereToEat.Controls.Add(this.rbTakeOut);
+            this.gbWhereToEat.Controls.Add(this.rbEatIn);
+            this.gbWhereToEat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gbWhereToEat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbWhereToEat.Location = new System.Drawing.Point(366, 309);
+            this.gbWhereToEat.Name = "gbWhereToEat";
+            this.gbWhereToEat.Size = new System.Drawing.Size(225, 123);
+            this.gbWhereToEat.TabIndex = 7;
+            this.gbWhereToEat.TabStop = false;
+            this.gbWhereToEat.Text = "Where To Eat";
             // 
             // rbTakeOut
             // 
@@ -353,14 +352,13 @@
             this.ckbExtraCheese.Text = "Extra Cheese";
             this.ckbExtraCheese.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // PizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 547);
-            this.Controls.Add(this.gbToppings);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1185, 621);
+            this.Controls.Add(this.gbWhereToEat);
+            this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbSize);
             this.Controls.Add(this.RestButton);
             this.Controls.Add(this.OrderButton);
@@ -369,14 +367,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.gbToppings);
+            this.Name = "PizzaOrder";
+            this.Text = "Pizza Order";
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbCrustType.ResumeLayout(false);
+            this.gbCrustType.PerformLayout();
+            this.gbWhereToEat.ResumeLayout(false);
+            this.gbWhereToEat.PerformLayout();
             this.gbToppings.ResumeLayout(false);
             this.gbToppings.PerformLayout();
             this.ResumeLayout(false);
@@ -394,17 +393,15 @@
         private System.Windows.Forms.Button OrderButton;
         private System.Windows.Forms.Button RestButton;
         private System.Windows.Forms.GroupBox gbSize;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.RadioButton rbLarge;
         private System.Windows.Forms.RadioButton rbMeduim;
         private System.Windows.Forms.RadioButton rbSmall;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbCrustType;
         private System.Windows.Forms.RadioButton rbThink;
         private System.Windows.Forms.RadioButton rbThin;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbWhereToEat;
         private System.Windows.Forms.RadioButton rbTakeOut;
         private System.Windows.Forms.RadioButton rbEatIn;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.CheckBox ckbExtraCheese;
         private System.Windows.Forms.CheckBox ckbGreenPaper;
         private System.Windows.Forms.CheckBox ckbOlives;
@@ -412,6 +409,7 @@
         private System.Windows.Forms.CheckBox ckbTomatoes;
         private System.Windows.Forms.CheckBox ckbMushroom;
         private System.Windows.Forms.GroupBox gbToppings;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
