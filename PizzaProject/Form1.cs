@@ -34,9 +34,31 @@ namespace PizzaProject
 
             rbEatIn.CheckedChanged += RadioButton_CheckedChanged;
             rbTakeOut.CheckedChanged += RadioButton_CheckedChanged;
+
+            
+
+
         }
 
-        private void RestAllButtons()
+
+        private int GetTag(GroupBox groupbox)
+        {
+            int tag = 0;
+            foreach(Control control in groupbox.Controls)
+            {
+                if (control is RadioButton radioButton && radioButton.Checked)
+                {
+                    tag += Convert.ToInt32(radioButton.Tag);
+                }
+                else if (control is CheckBox checkBox && checkBox.Checked)
+                {
+                    tag += Convert.ToInt32(checkBox.Tag);
+                }
+            }
+            return tag;
+        }
+
+        private void RestOrder()
         {
             // Rest Size
             ResetGroupBoxControls(gbSize);
@@ -56,6 +78,15 @@ namespace PizzaProject
 
             RestButton.Enabled = false;
             RestButton.BackColor = Color.AntiqueWhite;
+
+            gbSize.Enabled = true;
+            gbCrustType.Enabled = true;
+            gbWhereToEat.Enabled = true;
+            gbToppings.Enabled = true;
+
+            lblSize.Text = "Nothing";
+            lblCrust.Text = "Nothing";
+            lblWhereToEat.Text = "Nothing";
         }
 
         private void ResetGroupBoxControls(GroupBox groupBox)
@@ -100,10 +131,103 @@ namespace PizzaProject
                 MessageBoxIcon.Warning,
                 MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                RestAllButtons();
+                RestOrder();
             }
 
         }
 
+        int TotalPrice()
+        {
+            return GetTag(gbSize) + GetTag(gbCrustType) + GetTag(gbWhereToEat) + GetTag(gbToppings);
+        }
+
+        void UpdateTotalPrice()
+        {
+            lblPrice.Text = "$" + TotalPrice().ToString();
+        }
+
+        private void rbSmall_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+            lblSize.Text = "Small";
+        }
+
+        private void rbMeduim_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+            lblSize.Text = "Meduim";
+        }
+
+        private void rbLarge_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+            lblSize.Text = "Large";
+        }
+
+        private void rbThink_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+            lblCrust.Text = "Think Crust";
+        }
+
+        private void rbThin_CheckedChanged(object sender, EventArgs e)
+        {
+            lblCrust.Text = "Thin Crust";
+        }
+
+        private void ckbExtraCheese_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void ckbMushroom_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void ckbTomatoes_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void ckbOnion_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void ckbOlives_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void ckbGreenPaper_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void rbEatIn_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+            lblWhereToEat.Text = "Eat In";
+        }
+
+        private void rbTakeOut_CheckedChanged(object sender, EventArgs e)
+        {
+            lblWhereToEat.Text = "Take Out";
+        }
+
+        private void OrderButton_Click(object sender, EventArgs e)
+        {
+            if (RestButton.Enabled)
+            {
+                gbSize.Enabled = false;
+                gbCrustType.Enabled = false;
+                gbToppings.Enabled = false;
+                gbWhereToEat.Enabled = false;
+
+                MessageBox.Show("Confrim Order?", "Order Pizza", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                
+            }
+        }
     }
 }
