@@ -78,7 +78,7 @@
             this.label1.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(223, 26);
+            this.label1.Location = new System.Drawing.Point(293, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 64);
             this.label1.TabIndex = 0;
@@ -91,7 +91,7 @@
             this.label2.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(400, 26);
+            this.label2.Location = new System.Drawing.Point(470, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 64);
             this.label2.TabIndex = 1;
@@ -104,7 +104,7 @@
             this.label3.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(564, 26);
+            this.label3.Location = new System.Drawing.Point(634, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 64);
             this.label3.TabIndex = 2;
@@ -117,7 +117,7 @@
             this.label4.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Orange;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(640, 26);
+            this.label4.Location = new System.Drawing.Point(710, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 64);
             this.label4.TabIndex = 3;
@@ -130,7 +130,7 @@
             this.label5.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(731, 26);
+            this.label5.Location = new System.Drawing.Point(801, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 64);
             this.label5.TabIndex = 4;
@@ -143,7 +143,7 @@
             this.OrderButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OrderButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderButton.Location = new System.Drawing.Point(291, 528);
+            this.OrderButton.Location = new System.Drawing.Point(304, 528);
             this.OrderButton.Name = "OrderButton";
             this.OrderButton.Size = new System.Drawing.Size(133, 54);
             this.OrderButton.TabIndex = 10;
@@ -159,7 +159,7 @@
             this.RestButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RestButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RestButton.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RestButton.Location = new System.Drawing.Point(575, 528);
+            this.RestButton.Location = new System.Drawing.Point(598, 528);
             this.RestButton.Name = "RestButton";
             this.RestButton.Size = new System.Drawing.Size(133, 54);
             this.RestButton.TabIndex = 11;
@@ -448,7 +448,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(196, 118);
+            this.label11.Location = new System.Drawing.Point(109, 227);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 29);
             this.label11.TabIndex = 25;
@@ -488,7 +488,7 @@
             // 
             this.lblCrust.AutoSize = true;
             this.lblCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrust.Location = new System.Drawing.Point(109, 228);
+            this.lblCrust.Location = new System.Drawing.Point(196, 118);
             this.lblCrust.Name = "lblCrust";
             this.lblCrust.Size = new System.Drawing.Size(100, 29);
             this.lblCrust.TabIndex = 21;

@@ -54,20 +54,8 @@ namespace PizzaProject
             return tag;
         }
 
-        private void RestOrder()
+        void DefualtControls()
         {
-            // Rest Size
-            ResetGroupBoxControls(gbSize);
-
-            // Rest Crust Type
-            ResetGroupBoxControls(gbCrustType);
-
-            // Rest Where To Eat
-            ResetGroupBoxControls(gbWhereToEat);
-
-            // Rest Toppings
-            ResetGroupBoxControls(gbToppings);
-
             // Change Enabled And Color For Order And Rest Color
             OrderButton.Enabled = false;
             OrderButton.BackColor = Color.LightGreen;
@@ -83,6 +71,22 @@ namespace PizzaProject
             lblSize.Text = "Nothing";
             lblCrust.Text = "Nothing";
             lblWhereToEat.Text = "Nothing";
+        }
+        private void RestOrder()
+        {
+            // Rest Size
+            ResetGroupBoxControls(gbSize);
+
+            // Rest Crust Type
+            ResetGroupBoxControls(gbCrustType);
+
+            // Rest Where To Eat
+            ResetGroupBoxControls(gbWhereToEat);
+
+            // Rest Toppings
+            ResetGroupBoxControls(gbToppings);
+
+            DefualtControls();
         }
 
         private void ResetGroupBoxControls(GroupBox groupBox)
@@ -212,16 +216,31 @@ namespace PizzaProject
             lblWhereToEat.Text = "Take Out";
         }
 
+        void EnabledStatus()
+        {
+            gbSize.Enabled = !gbSize.Enabled;
+            gbCrustType.Enabled = !gbCrustType.Enabled;
+            gbToppings.Enabled = !gbToppings.Enabled;
+            gbWhereToEat.Enabled = !gbWhereToEat.Enabled;
+        }
+
         private void OrderButton_Click(object sender, EventArgs e)
         {
             if (RestButton.Enabled)
             {
-                gbSize.Enabled = false;
-                gbCrustType.Enabled = false;
-                gbToppings.Enabled = false;
-                gbWhereToEat.Enabled = false;
+                EnabledStatus();
+                if(MessageBox.Show("Confrim Order?", "Order Pizza", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                {
+                    EnabledStatus();
+                    
+                }
+                else
+                {
+                    OrderButton.Enabled = false;
+                    OrderButton.BackColor = Color.LightGreen;
 
-                MessageBox.Show("Confrim Order?", "Order Pizza", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                }
                 
             }
         }
