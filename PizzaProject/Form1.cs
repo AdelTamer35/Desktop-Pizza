@@ -134,7 +134,6 @@ namespace PizzaProject
             {
                 RestOrder();
             }
-
         }
 
         int TotalPrice()
@@ -165,7 +164,6 @@ namespace PizzaProject
                 }
             }
 
-
             // Format the label text
             if (selectedToppings.Count == 0)
             {
@@ -187,8 +185,6 @@ namespace PizzaProject
                     }
                 }
             }
-
-
         }
         private void rbSmall_CheckedChanged(object sender, EventArgs e)
         {
