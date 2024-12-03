@@ -70,6 +70,7 @@ namespace PizzaProject
 
             lblSize.Text = "Nothing";
             lblCrust.Text = "Nothing";
+            lblToppings.Text = "Nothing";
             lblWhereToEat.Text = "Nothing";
         }
         private void RestOrder()
@@ -146,6 +147,49 @@ namespace PizzaProject
             lblPrice.Text = "$" + TotalPrice().ToString();
         }
 
+        void UpdateToppings()
+        {
+            lblToppings.Text = "";
+            // Initialize a list to store selected toppings
+            List<string> selectedToppings = new List<string>();
+
+            // Add toppings based on the checkboxes
+            foreach (Control control in gbToppings.Controls)
+            {
+                if(control is CheckBox checkbox)
+                {
+                    if(checkbox.Checked)
+                    {
+                        selectedToppings.Add(checkbox.Text);
+                    }
+                }
+            }
+
+
+            // Format the label text
+            if (selectedToppings.Count == 0)
+            {
+                lblToppings.Text = "Nothing";
+            }
+            else
+            {
+                for (int i = 0; i < selectedToppings.Count; i += 2)
+                {
+                    if (i + 1 < selectedToppings.Count)
+                    {
+                        // Add two toppings in the same line
+                        lblToppings.Text += $"{selectedToppings[i]}, {selectedToppings[i + 1]}\n";
+                    }
+                    else
+                    {
+                        // Add the last topping if the count is odd
+                        lblToppings.Text += $"{selectedToppings[i]}\n";
+                    }
+                }
+            }
+
+
+        }
         private void rbSmall_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
@@ -178,31 +222,38 @@ namespace PizzaProject
         private void ckbExtraCheese_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
+            
         }
 
         private void ckbMushroom_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
         }
 
         private void ckbTomatoes_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
         }
 
         private void ckbOnion_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
         }
 
         private void ckbOlives_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
         }
 
         private void ckbGreenPaper_CheckedChanged(object sender, EventArgs e)
         {
             UpdateTotalPrice();
+            UpdateToppings();
         }
 
         private void rbEatIn_CheckedChanged(object sender, EventArgs e)
@@ -233,16 +284,14 @@ namespace PizzaProject
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 {
                     EnabledStatus();
-                    
                 }
                 else
                 {
                     OrderButton.Enabled = false;
                     OrderButton.BackColor = Color.LightGreen;
-
                 }
-                
             }
         }
+
     }
 }
